@@ -2,6 +2,8 @@
 # This script will set up your package for distribution.
 
 from setuptools import setup, find_packages
+import pip
+import wheel
 
 setup(
     name='pyp_package',
@@ -12,5 +14,10 @@ setup(
             'pyp=pyp_package.cli:main',
         ],
     },
-    # Add other metadata like author, description, dependencies, etc.
+    install_requires={
+        pip>=25.0,
+        setup>=68.0,
+        wheel>=0.33,
+        
+    }
 )
