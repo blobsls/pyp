@@ -1,5 +1,4 @@
 # File: pyp_package/__init__.py
-# This is the main module of your library.
 import subprocess
 import sys
 
